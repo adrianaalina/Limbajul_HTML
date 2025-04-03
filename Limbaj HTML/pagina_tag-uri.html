@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+.titlu{
+  font-family: "Sofia", sans-serif;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimbajHTML</title>
+</head>
+<body style="background-image:url('fundal principal.jpg');
+background-attachment:scroll;
+background-size: cover;
+background-size:auto;
+opacity:0.9 ;
+">
+<style>
+@keyframes animatie {
+  0% {background-color: #e799a3bf;}
+  50% {background-color: #99e8ddba;}
+  100% {background-color: #e799a3b0;}
+}
+.titlu {
+  width: 300px;
+  height: 100px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.titlu:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+}
+.celula_tabel{
+  width:200px ;
+  font-size:20px ;
+  
+}
+
+.buton_1 {
+  height: 45px;
+  width: 200px; 
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border:none;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg, #f7d8dd 25%, #afc5c0 95%);
+  font-family: "Sofia", sans-serif;
+  font-size: 20px; ;
+  transition: all 0.3s ease;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  
+}
+.buton_1:hover {
+  background-position: right center;
+  color: #fff;
+}
+.buton_1:hover:after{
+   height: 100%;
+}
+
+.buton_1:after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 115%;
+  background: #c04f4f;
+  background-image: linear-gradient(360deg, #fca3ad 15%, rgb(55, 195, 174) 80%);
+
+}
+ 
+.buton_1:active {
+  top: 2px;
+  
+}
+</style>
+<div >
+ <div  style="scroll-snap-align:start ;position: sticky;top:20px ;z-index:999;  background-color:#feb3b3;height: 80px; width=device-width;animation: animatie 7s infinite;"  >
+     <img style="height: 80px; width: 150px; float: left;" src="imagine MENIU 1.jpg" >
+   <center> 
+    <table style="height: 40px;" width=device-width >
+    <tr>
+    <td ><img style="height:95px" src="LOGO 2.png"></td>
+    <td><pre>  </pre></td>
+    <td><a href ="primapagina.html"><button class="buton_1">Pagina principala</button></a ></td>
+    <td><a href ="paginalectii.html"><button class="buton_1">Pagina lectii</button></a></td> 
+    <td><a href ="pagina_tag-uri.html"><button class="buton_1">Tag-uri si atribute</button></a ></a></td>
+      
+  </center>
+  <img style="height: 80px;float: right; width: 150px;px ;" src="imagine MENIU 1.jpg" >
+  </table>
+ </div>
+ <br>
+ <br>
+ <br>
+  <div style="float:left;width:max-content; margin:15px;padding: 10px; background-color: rgb(248, 224, 224);background-image:url('imagine MENIU.jpg');background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size: cover;">
+    <h2 style="font-style: oblique; ">Meniu</h2>
+    <ul>
+      <li style="font-size: 20px;"><a style="text-decoration:none;" href="primapagina.html"><em style="color:black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Pagina principala</em></a></li>
+      <li style="font-size: 20px"><a style="text-decoration:none;" href="paginalectii.html"><em style="color:black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lectii</em></a>
+          <br>
+          <a style="text-decoration:none; " href="Prima_lectie.html"><i style="color: black;font-size:18px;">~ Strucura unui document HTML </i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_doua_lectie.html"><i style="color: black;font-size:18px;">~ Despre atribute in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_treia_lectie.html"><i style="color: black;font-size:18px;">~ Despre culori in HTMLL</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_patra_lectie.html"><i style="color: black;font-size:18px;">~ Formatare text in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_cincea_lectie.html"><i style="color: black;font-size:18px;">~ Adaugare imagini in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_sasea_lectie.html"><i style="color: black;font-size:18px;">~ Creare link in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_saptea_lectie.html"><i style="color: black;font-size:18px;">~ Creare liste in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_opta_lectie.html"><i style="color: black;font-size:18px;">~ Creare tabele in HTML</i></a>
+          <br>
+          
+      </li>
+      <li style="font-size: 20px"><a style="text-decoration:none;" href="pagina_tag-uri.html"><em style="color:black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Tag-uri si atribute</em></a></li>
+      
+  </ul>
+  </div>
+  <table>
+    <th><div style="margin:10px;padding:15px ; float: left; width:970px;background-color:#fbadb757;">
+      <center> <div style="text-align:center;font-size: 35px;width: 550px;height: 55px; border-radius: 50% ;border:  rgb(251, 241, 242) solid ;text-shadow: 2px 2px #a3f9e0e9;" class="titlu"><i style="color: rgb(0, 0, 0)">Taguri si atribute uzuale </i></div></center>
+      <br>
+      <br>
+      <br>
+      <table border="2" style="border: 2px #AAF0D1 solid;font-size:20px;" align="center">
+        <tbody><tr class="celula_tabel">
+          <td class="celula_tabel"><p align="center">&lt;HTML&gt; &lt;/HTML&gt; </p></td>
+          <td class="celula_tabel"><p>Defineşte un fişier în format Web </p></td>
+        </tr>
+        <tr class="celula_tabel" style="height: auto !important;">
+          <td><p align="center">&lt;HEAD&gt; &lt;/HEAD&gt; </p></td>
+          <td style="height: auto !important;"><div class="google-auto-placed" style="width: 100%; height: auto; clear: both; text-align: center;"><ins data-ad-format="auto" class="adsbygoogle adsbygoogle-noablate" data-ad-client="ca-pub-1017762822113286" data-adsbygoogle-status="done" style="display: block; margin: 10px auto; background-color: transparent; height: 0px;" data-ad-status="unfilled"><div id="aswift_6_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 378px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden; opacity: 0;"><iframe id="aswift_6" name="aswift_6" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 378px; height: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="378" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1017762822113286&amp;output=html&amp;h=280&amp;adk=2449671723&amp;adf=3638086676&amp;pi=t.aa~a.34737367~rp.2&amp;w=378&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1662650263&amp;rafmt=1&amp;to=qs&amp;pwprc=9861762404&amp;format=378x280&amp;url=http%3A%2F%2Fwww.competentedigitale.ro%2Fhtml%2Ftaguri.html&amp;fwr=0&amp;pra=3&amp;rpe=1&amp;resp_fmts=3&amp;wgl=1&amp;fa=40&amp;dt=1670497424819&amp;bpp=4&amp;bdt=879&amp;idt=4&amp;shv=r20221206&amp;mjsv=m202212050101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D54fc3c8b1f8ecdca-22865022a9cd0093%3AT%3D1654615961%3ART%3D1654615961%3AS%3DALNI_MZ6O3j0bfuJX4C_FZMGu4RxDv7Nmg&amp;gpic=UID%3D00000b8f7adbae1e%3AT%3D1670496613%3ART%3D1670496613%3AS%3DALNI_MbIeq5rjyMJlDkHdh4QhVBNfKvn8g&amp;prev_fmts=728x90%2C728x90%2C728x90%2C0x0&amp;nras=2&amp;correlator=3757226113823&amp;frm=20&amp;pv=1&amp;ga_vid=989543016.1670497424&amp;ga_sid=1670497424&amp;ga_hid=367620276&amp;ga_fc=0&amp;u_tz=120&amp;u_his=2&amp;u_h=960&amp;u_w=1440&amp;u_ah=912&amp;u_aw=1440&amp;u_cd=24&amp;u_sd=1.5&amp;adx=614&amp;ady=1413&amp;biw=1423&amp;bih=809&amp;scr_x=0&amp;scr_y=0&amp;eid=44759875%2C44759926%2C44759837%2C31071168%2C44777949&amp;oid=2&amp;pvsid=3464167401343310&amp;tmod=2020845595&amp;uas=0&amp;nvt=1&amp;eae=0&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1440%2C0%2C1440%2C912%2C1440%2C809&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=128&amp;bc=23&amp;ifi=7&amp;uci=a!7&amp;btvi=3&amp;fsb=1&amp;xpc=TCl1YB5ZwS&amp;p=http%3A//www.competentedigitale.ro&amp;dtd=13" data-google-container-id="a!7" data-google-query-id="CMqY_Ovv6fsCFVRMHgIdSh0K-A" data-load-complete="true"></iframe></div></ins></div><p>Antetul documentului </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;TITLE&gt; &lt;/TITLE&gt; </p></td>
+          <td><p>Tilul documentului </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;BODY&gt; &lt;/BODY&gt; </p></td>
+          <td><p>Corpul paginii HTML </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">BGCOLOR = culoare </p></td>
+          <td><p>Culoarea de fond a paginii </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">TEXT=culoare </p></td>
+          <td><p>Culoarea textului pe pagină</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">LINK=culoare </p></td>
+          <td><p>Culoarea legăturiilor nevizitate din pagină</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">VLINK=culoare </p></td>
+          <td><p>Culoarea legăturiilor vizitate din pagină</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">ALINK=culoare </p></td>
+          <td><p>Culoarea legăturiilor pe durata clicului executat de utilizator </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">BACKGROUND = url </p></td>
+          <td><p>Imaginea de fond pentru pagină</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;P&gt; </p></td>
+          <td><p>Paragraf </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;Hn&gt; &lt;Hn&gt; </p></td>
+          <td><p>Nivel de subtitlu al documentului (n = 1-6) </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;FONT&gt; &lt;/FONT&gt; </p></td>
+          <td><p>Specifică atribute ale textului încadrat </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">SIZE=n </p></td>
+          <td><p>Dimensiunea textului este 1-7 </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">FACE="a,b" </p></td>
+          <td><p>Specifică fontul: a, dacă este disponibil, sau b </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">COLOR=s </p></td>
+          <td><p>Culoarea textului: fie un nume de culoare, fie o valoare RGB </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;BR&gt; </p></td>
+          <td><p>Linie nouă</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;PRE&gt; &lt;/PRE&gt; </p></td>
+          <td><p>Informaţie preformatată</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;!-- --&gt; </p></td>
+          <td><p>Comenatriu HTML </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;CENTER&gt; &lt;/CENTER&gt; </p></td>
+          <td><p>Centrează materialul în pagină</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;HR&gt; </p></td>
+          <td><p>Riglă orizontală</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">SIZE=x </p></td>
+          <td><p>Înălţimea riglei în pixeli </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">WIDTH=x </p></td>
+          <td><p>Lăţimea riglei în pixeli sau în procente </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">NOSHADE </p></td>
+          <td><p>Dezactivează afişarea umbrei pentru rigla orizontală</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">ALIGN=x </p></td>
+          <td><p>Alinierea riglei orizontale în pagina (left, center, right) </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">COLOR=x </p></td>
+          <td><p>Culoarea riglei orizontale (numai pentru IE) </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;A&gt; &lt;/A&gt; </p></td>
+          <td><p>Marcaj de tip ancoră</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">HREF=url </p></td>
+          <td><p>Referinţă hipertext </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">HREF=#nume </p></td>
+          <td><p>Referinţă către o ancoră internă</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">Name=nume </p></td>
+          <td><p>Definiţia unei ancore interne </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;sup&gt;&lt;/sup&gt;</p></td>
+          <td><p>Text exponenţial, superscript. <em>Exp</em>: 2<sup>3</sup> se scrie 2&lt;sup&gt;3&lt;/sup&gt;</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;sub&gt;&lt;/sub&gt;</p></td>
+          <td><p>Tagul subscript. <em>Exp</em>: H<sub>2</sub>O se scrie H&lt;sub&gt;2&lt;/sub&gt;O</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td ><p align="center">&lt;DD&gt; </p></td>
+          <td ><p>Descriere definiţie </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;DL&gt; &lt;/DL&gt; </p></td>
+          <td><p>Lista de tip definiţie </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td ><p align="center">&lt;DT&gt; </p></td>
+          <td><p>Termen de definiţie </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;LI&gt; </p></td>
+          <td><p>Element de listă</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td ><p align="center">&lt;OL&gt;</p></td>
+          <td><p>Listă ordonată (numerotată) </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">TYPE=tip </p></td>
+          <td><p>Tipul numerotării. Valori posibile: A, a, I, i, 1 </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td ><p align="center">START=x </p></td>
+          <td><p>Numărul de început al listei ordonate </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;UL&gt;</p></td>
+          <td><p>Listă neordonată (marcată) </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td ><p align="center">TYPE=formă</p></td>
+          <td><p>Forma marcajului. Valori posibile: circle, square, disc. </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td ><p align="center">&lt;B&gt; &lt;/B&gt; </p></td>
+          <td ><p>Afişează text cu caractere aldine </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;I&gt; &lt;/I&gt; </p></td>
+          <td><p>Afişează text cu caractere cursive </p></td>
+        </tr >
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;U&gt; &lt;/U&gt; </p></td>
+          <td><p>Afişează text subliniat </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;TT&gt; &lt;/TT&gt; </p></td>
+          <td><p>Text cu font monospaţiu </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;CITE&gt; &lt;/CITE&gt; </p></td>
+          <td><p>Citare bibliografică</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;CODE&gt; &lt;/CODE&gt; </p></td>
+          <td><p>Listing de program </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;EM&gt; &lt;/EM&gt; </p></td>
+          <td><p>Stil logic de evidenţiere </p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;KBD&gt; &lt;/KBD&gt; </p></td>
+          <td><p>Text de la tastatură</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;STRONG&gt; &lt;/STRONG&gt; </p></td>
+          <td><p>Evidenţiere logică puternică</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;VAR&gt; &lt;/VAR&gt; </p></td>
+          <td><p>Program sau variabilă</p></td>
+        </tr>
+        <tr class="celula_tabel">
+          <td><p align="center">&lt;BASEFONT SIZE = n&gt; </p></td>
+          <td><p>Specifică dimensiunea implicită a fontului din pagină</p></td>
+        </tr>
+        
+        
+        
+        <tr >
+          <td class="celula_tabel"><p>&lt;FRAMESET&gt; &lt;/FRAMESET&gt; </p></td>
+          <td class="celula_tabel"><p>Definirea redactării paginii </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>COLS=x </p></td>
+          <td class="celula_tabel"><p>Numărul şi mărimea relativă a coloanelor </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>ROWS=x </p></td>
+          <td class="celula_tabel"><p>Numărul şi mărimea relativă a liniilor </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>BORDER=x </p></td>
+          <td class="celula_tabel"><p>Specifică starea "on" (activă) sau "off" (inactivă) pentru chenarul cadrului FRAMESET (1 sau 0) </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>FRAMEBORDER = x </p></td>
+          <td class="celula_tabel"><p>Specifică mărimea chenarului </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>FRAMESPACING = x </p></td>
+          <td class="celula_tabel"><p>Mărimea spaţiului dintre două cadre adiacente </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>&lt;FRAME&gt; </p></td>
+          <td class="celula_tabel"><p>Definiţia unui anumit cadru </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>SRC=url </p></td>
+          <td class="celula_tabel"><p>URL-ul sursă pentru cadru </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>NAME=nume </p></td>
+          <td class="celula_tabel"><p>Numele cadrului (utilizat împreună cu TARGET=nume ca parte componentă a marcajului de tip ancoră&lt;a&gt; </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>SCROLLING=scrl </p></td>
+          <td class="celula_tabel"><p>Defineşte opţiunea barei de derulare.Valori posibile: on(activă), off(inactivă), auto (automat) </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>FRAMEBORDER=x </p></td>
+          <td class="celula_tabel"><p>Mărimea chenarului din jurul cadrului </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>MARGINHEIGHT=x </p></td>
+          <td class="celula_tabel"><p>Spaţiul suplimentar de deasupra şi dedesubtul unui anumit cadru </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>MARGINWIDTH=x </p></td>
+          <td class="celula_tabel"><p>Spaţiu suplimetar la stânga şi la dreapta unui anumit cadru </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>&lt;NOFRAMES&gt; &lt;/NOFRAMES&gt; </p></td>
+          <td class="celula_tabel"><p>Secţiunea de pagină afişată pentru utilizatorii care nu pot vedea un cadru </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>&lt;IFRAME&gt; </p></td>
+          <td class="celula_tabel"><p>Cadru intern (numai pentru IE) </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>SRC=url </p></td>
+          <td class="celula_tabel"><p>Sursa cadrului </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>NAME=s </p></td>
+          <td class="celula_tabel"><p>Numele ferestrei (util pentru TARGET) </p></td>
+        </tr>
+        <tr>
+          <td class="celula_tabel"><p>HEIGHT=x </p></td>
+          <td class="celula_tabel"><p>Înăţtimea cadrului înglobat </p></td>
+        </tr>
+        <tr >
+          <td class="celula_tabel"><p>WIDTH=x </p></td>
+          <td class="celula_tabel"><p>Lăţimea cadrului înglobat </p></td>
+
+
+
+          <tbody><tr >
+            <td class="celula_tabel"><p>&lt;TABLE&gt; &lt;/TABLE&gt; </p></td>
+            <td class="celula_tabel"><p>Tabel HTML </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>BORDER=x </p></td>
+            <td class="celula_tabel"><p>Chenarul tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>CELLPADDING=x </p></td>
+            <td class="celula_tabel"><p>Spaţiul suplimentar în cadrul celulelor tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>CELLSPACING=x </p></td>
+            <td class="celula_tabel"><p>Spaţiul suplimentar între celulele tabelului </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>WIDTH=x </p></td>
+            <td class="celula_tabel"><p>Lăţimea impusă tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>FRAME=valoare </p></td>
+            <td class="celula_tabel"><p>Ajustarea fină a tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>RULES=valoare </p></td>
+            <td class="celula_tabel"><p>Ajustarea fină a riglelor tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>BORDERCOLOR = culoare </p></td>
+            <td class="celula_tabel"><p>Specifică culoarea chenarului tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>BORDERCOLORLIGHT = culoare </p></td>
+            <td class="celula_tabel"><p>Cea mai deschisă culoare din cele două culori specificate </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>BORDERCOLORDARK = culoare </p></td>
+            <td class="celula_tabel"><p>Cea mai închisă culoare din cele două culori specificate </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>ALIGN=left </p></td>
+            <td class="celula_tabel"><p>Aliniază tabelul la marginea din stânga a paginii, iar textul curge în partea dreaptă</p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>ALIGN=right </p></td>
+            <td class="celula_tabel"><p>Aliniază tabelul la marginea din dreapta a paginii, iar textul curge în partea stângă</p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>HSPACE=x </p></td>
+            <td class="celula_tabel"><p>Spaţiu suplimetar pe orizontală în jurul tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>VSPACE=x </p></td>
+            <td class="celula_tabel"><p>Spaţiu suplimetar pe verticală în jurul tabelului </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>COLS=x </p></td>
+            <td class="celula_tabel"><p>Specifică numărul de coloane ale unui tabel </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>&lt;COLGROUP&gt; &lt;/COLGROUP&gt; </p></td>
+            <td class="celula_tabel"><p>Defineşte un set de definiţii de coloane cu ajutorul marcajului &lt;col&gt; </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>&lt;COL WIDTH=x&gt; </p></td>
+            <td class="celula_tabel"><p>Defineşte lăţimea unei coloane exprimată în pixeli </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>&lt;THEAD&gt; &lt;/THEAD&gt; </p></td>
+            <td class="celula_tabel"><p>Defineşte titlul tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>&lt;BODY&gt; &lt;/TBODY&gt; </p></td>
+            <td class="celula_tabel"><p>Defineşte corpul tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>&lt;TR&gt; &lt;/TR&gt; </p></td>
+            <td class="celula_tabel"><p>Linie de tabel </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>BGCOLOR=culoare </p></td>
+            <td class="celula_tabel"><p>Specifică culoarea de fond pentru întreaga linie </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>ALIGN=aliniere </p></td>
+            <td class="celula_tabel"><p>Alinierea celulelor de pe linia curentă (left, center, right) </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>&lt;TD&gt; &lt;/TD&gt; </p></td>
+            <td class="celula_tabel"><p>Celula de date a tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>BGCOLOR=culoare </p></td>
+            <td class="celula_tabel"><p>Specifică culoarea de fond pentru celula de date </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>COLSPAN=x </p></td>
+            <td class="celula_tabel"><p>Numărul de coloane pe care se întinde celula curentă de date </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>ROWSPAN=x </p></td>
+            <td class="celula_tabel"><p>Numărul de linii pe care se întinde celula curentă de date </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>ALIGN=aliniere </p></td>
+            <td class="celula_tabel"><p>Alinierea materialului din cadrul celulei de date.Valori posibile: (left, right, center) </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>VALIGN=aliniere </p></td>
+            <td class="celula_tabel"><p>Alinierea pe verticală a materialului din cadrul celulei de date.Valori posibile: (top, bottom, middle) </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>BACKGROUND=url </p></td>
+            <td class="celula_tabel"><p>Specifică imaginea de fond pentru celula tabelului </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>NOWRAP </p></td>
+            <td class="celula_tabel"><p>Nu permite despărţirea textului pe linii în cadrul unei celule </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>ALIGN=baseline </p></td>
+            <td class="celula_tabel"><p>Aliniază celule de date cu linia de bază a textului adiacent </p></td>
+          </tr>
+          <tr>
+            <td class="celula_tabel"><p>ALIGN=caracter </p></td>
+            <td class="celula_tabel"><p>Aliniază o coloană faţă de un anumit carcater (caracterul prestabilit este ".") </p></td>
+          </tr>
+          <tr >
+            <td class="celula_tabel"><p>ALIGN=justify </p></td>
+            <td class="celula_tabel"><p>Aliniază atât marginea din stânga cât şi marginea din dreapta a unui text </p></td>
+          </tr>
+        </tbody>
+        </tr>
+      </tbody>
+      </tbody></table>
+
+
+
+
+
+
+</div>
+</body>

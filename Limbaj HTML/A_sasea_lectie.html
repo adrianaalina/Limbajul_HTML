@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+.titlu{
+  font-family: "Sofia", sans-serif;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimbajHTML</title>
+</head>
+<body style="background-image:url('fundal principal.jpg');background-repeat: no-repeat;
+background-attachment:scroll;
+background-size: cover;">
+<style>
+@keyframes animatie {
+  0% {background-color: #e799a3bf;}
+  50% {background-color: #99e8ddba;}
+  100% {background-color: #e799a3b0;}
+}
+.titlu {
+  width: 100px;
+  height: 100px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.titlu:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+}
+
+.buton_1 {
+  height: 45px;
+  width: 200px; 
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border:none;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg, #f7d8dd 25%, #afc5c0 95%);
+  font-family: "Sofia", sans-serif;
+  font-size: 20px; ;
+  transition: all 0.3s ease;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  
+}
+.buton_1:hover {
+  background-position: right center;
+  color: #fff;
+}
+.buton_1:hover:after{
+   height: 100%;
+}
+
+.buton_1:after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 115%;
+  background: #c04f4f;
+  background-image: linear-gradient(360deg, #fca3ad 15%, rgb(55, 195, 174) 80%);
+
+}
+ 
+.buton_1:active {
+  top: 2px;
+  
+}
+</style>
+<div >
+ <div  style="scroll-snap-align:start ;position: sticky;top:20px;z-index:999; background-color:#feb3b3;height: 80px; width=device-width;animation: animatie 7s infinite;"  >
+     <img style="height: 80px; width: 150px; float: left;" src="imagine MENIU 1.jpg" >
+   <center> 
+    <table style="height: 40px;" width=device-width >
+    <tr>
+    <td ><img style="height:95px" src="LOGO 2.png"></td>
+    <td><pre>  </pre></td>
+    <td><a href ="primapagina.html"><button class="buton_1">Pagina principala</button></a ></td>
+    <td><a href ="paginalectii.html"><button class="buton_1">Pagina lectii</button></a></td> 
+    <td><a href ="pagina_tag-uri.html"><button class="buton_1">Tag-uri si atribute</button></a ></a></td>
+      
+  </center>
+  <img style="height: 80px;float: right; width: 150px;px ;" src="imagine MENIU 1.jpg" >
+  </table>
+ </div>
+ <br>
+ <br>
+ <br>
+  <div style="float:left;width:max-content; margin:30px;padding: 10px; background-color: rgb(248, 224, 224);background-image:url('imagine MENIU.jpg');background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size: cover;">
+    <h2 style="font-style: oblique; ">Meniu</h2>
+    <ul>
+      <li style="font-size: 20px;"><a style="text-decoration:none;" href="primapagina.html"><em style="color:black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Pagina principala</em></a></li>
+      <li style="font-size: 20px"><a style="text-decoration:none;" href="paginalectii.html"><em style="color:black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lectii</em></a>
+          <br>
+          <a style="text-decoration:none; " href="Prima_lectie.html"><i style="color: black;font-size:18px;">~ Strucura unui document HTML </i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_doua_lectie.html"><i style="color: black;font-size:18px;">~ Despre atribute in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_treia_lectie.html"><i style="color: black;font-size:18px;">~ Despre culori in HTMLL</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_patra_lectie.html"><i style="color: black;font-size:18px;">~ Formatare text in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_cincea_lectie.html"><i style="color: black;font-size:18px;">~ Adaugare imagini in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_sasea_lectie.html"><i style="color: black;font-size:18px;">~ Creare link in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_saptea_lectie.html"><i style="color: black;font-size:18px;">~ Creare liste in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_opta_lectie.html"><i style="color: black;font-size:18px;">~ Creare tabele in HTML</i></a>
+          <br>
+          
+      </li>
+      <li style="font-size: 20px"><a style="text-decoration:none;" href="pagina_tag-uri.html"><em style="color:black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Tag-uri si atribute</em></a></li>
+       
+  </div>
+  <table>
+    <th><div style="margin:10px;padding:15px ; float: left; width:960px;background-color:#fbadb757;">
+<center> <div style="text-align:center;font-size: 35px;width: 450px;height: 55px; border-radius: 50% ;border:  rgb(251, 241, 242) solid ;text-shadow: 2px 2px #a3f9e0e9;" class="titlu"><i style="color: rgb(0, 0, 0)">Creare link in HTML</i></div></center>
+    <br>
+    <br>
+    <br>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Navigarea in cadrul site-urilor este posibila cu ajutorul link-urilor (legaturilor).</p>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Pentru a folosi legaturi in paginile web pe care le vei face, trebuie sa folosesti perechea de tag-uri &lt;a&gt; si &lt;/a&gt; </p>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Numele acestor tag-uri vine de la cuvantul anchor care se traduce ancora. Tag-ul &lt;a&gt; va trebui folosit impreuna cu atributul HREF.Codul va arata asa:    </p>
+   <center> <p style="border: 2px black solid;text-align:center;font-size: 19px;width:450px ;">&lt;a href="numelepaginii.html">Textul legaturii &lt;/a&gt;    </p>
+   </center>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Daca pagina respectiva se afla in acelasi folder cu pagina pe care se afla legatura atunci nu sunt necesare ghilimelele.</p>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Daca pagina catre care vrem sa facem o legatura, nu se afla in acelasi folder cu pagina noastra atunci nu mai putem folosi decat numele paginii HTML ca valoare a atributului HREF.    </p>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Pentru a adauga o legatura in cadrul unei pagini HTML din cadrul unui folder existent in folderul proiectului vom avea nevoie de structure : </p>
+    <center> <p style="border: 2px black solid;text-align:center;font-size: 19px;width:550px ;">&lt;a href="numefolder/numelepaginii.html">Textul legaturii &lt;/a&gt;    </p>
+    </center>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Pentru a adauga o legatura catre un<i> site particular</i> trebuie sa folosesti urmatoarea linie de cod:    </p>
+    <center> <p style="border: 2px black solid;text-align:center;font-size: 19px;width:550px ;">&lt;a href="adresa site-ului">Textul legaturii&lt;/a&gt;    </p>
+    </center>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Atunci cand avem de-a face cu pagini mai lungi, putem imparti aceste pagini in mai multe sectiuni catre care sa adaugam cate o legatura la inceputul paginii.Fiecare titlu al sectiunii trebuie definit ca ancora. Pentru acesta folosim atributul ID pe care il asociam tagului &lt;a&gt; .   </p>
+    
+</div>
+</body>

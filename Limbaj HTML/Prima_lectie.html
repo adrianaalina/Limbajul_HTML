@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+.titlu{
+  font-family: "Sofia", sans-serif;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimbajHTML</title>
+</head>
+<body style="background-image:url('fundal principal.jpg');background-repeat: no-repeat;
+background-attachment:scroll;
+background-size: cover;">
+<style>
+ @keyframes animatie_1 {
+    0% {background-color: #e799a3bf;}
+    50% {background-color: #99e8ddba;}
+    100% {background-color: #e799a3b0;}
+  }
+  @keyframes animatie_2 {
+    0% {background-color: #ffabb7;}
+    50% {background-color: #4dc5b5;}
+    100% {background-color: #ffabb7;}
+  }
+
+.titlu {
+  width: 100px;
+  height: 100px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.titlu:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 600px;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 1px 4px 8px 1px rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #3d94842a;
+  color: white;
+  transform: rotateY(180deg);
+}
+.text{
+  text-align: center;
+}
+
+.buton_1 {
+  height: 45px;
+  width: 200px; 
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border:none;
+  border-radius: 50%;
+  background-image:  linear-gradient(180deg, #f7d8dd 25%, #afc5c0 95%);
+  font-family: "Sofia", sans-serif;
+  font-size: 20px; ;
+  transition: all 0.3s ease;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  
+}
+.buton_1:hover {
+  background-position: right center;
+  color: #fff;
+}
+.buton_1:hover:after{
+   height: 100%;
+}
+
+.buton_1:after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 115%;
+  background: #c04f4f;
+  background-image: linear-gradient(360deg, #fca3ad 15%, rgb(55, 195, 174) 80%);
+
+}
+ 
+.buton_1:active {
+  top: 2px;
+  
+}
+</style>
+<div  style="scroll-snap-align:start ;position: sticky;z-index:999; top:20px; background-color:#feb3b3;height: 80px; width=device-width;animation: animatie_1 7s infinite;"  >
+  <img style="height: 80px; width: 150px; float: left;" src="imagine MENIU 1.jpg" >
+<center> 
+ <table style="height: 40px;" width=device-width >
+ <tr>
+ <td ><img style="height:95px" src="LOGO 2.png"></td>
+ <td><pre>  </pre></td>
+ <td><a href ="primapagina.html"><button class="buton_1">Pagina principala</button></a ></td>
+  <td><a href ="paginalectii.html"><button class="buton_1">Pagina lectii</button></a></td> 
+  <td><a href ="pagina_tag-uri.html"><button class="buton_1">Tag-uri si atribute</button></a ></a></td>
+  
+</center>
+<img style="height: 80px;float: right; width: 150px;px ;" src="imagine MENIU 1.jpg" >
+
+  </table>
+ </div>
+ <br>
+ <br>
+ <br>
+ <div style="float:left;width:max-content; margin:10px;padding: 10px; background-color: #E89C99;background-image:url('imagine MENIU.jpg');background-repeat: no-repeat;
+ background-attachment:scroll;
+ background-size: cover;">
+    <h2 style="font-style: oblique; ">Meniu</h2>
+    <ul>
+      <li style="font-size: 20px;"><a style="text-decoration:none;" href="primapagina.html"><em style="color:black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Pagina principala</em></a></li>
+      <li style="font-size: 20px"><a style="text-decoration:none;" href="paginalectii.html"><em style="color:black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lectii</em></a>
+          <br>
+          <a style="text-decoration:none; " href="Prima_lectie.html"><i style="color: black;font-size:18px;">~ Strucura unui document HTML </i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_doua_lectie.html"><i style="color: black;font-size:18px;">~ Despre atribute in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_treia_lectie.html"><i style="color: black;font-size:18px;">~ Despre culori in HTMLL</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_patra_lectie.html"><i style="color: black;font-size:18px;">~ Formatare text in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_cincea_lectie.html"><i style="color: black;font-size:18px;">~ Adaugare imagini in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_sasea_lectie.html"><i style="color: black;font-size:18px;">~ Creare link in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_saptea_lectie.html"><i style="color: black;font-size:18px;">~ Creare liste in HTML</i></a>
+          <br>
+          <a style="text-decoration:none;" href="A_opta_lectie.html"><i style="color: black;font-size:18px;">~ Creare tabele in HTML</i></a>
+          <br>
+          
+      </li>
+      <li style="font-size: 20px"><a style="text-decoration:none;" href="pagina_tag-uri.html"><em style="color:black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Tag-uri si atribute</em></a></li>
+      
+  
+  </div>
+  <table>
+    <th><div style="margin:10px;padding:35px ; float: left; width: 980px;background-color:#fbadb757;">
+      <center> <div style="text-align:center;font-size: 35px;width: 800px;height: 55px; border-radius: 50% ;border:  rgb(251, 241, 242) solid ;text-shadow: 2px 2px #a3f9e0e9;" class="titlu"><i style="color: rgb(0, 0, 0)">Structura unui document HTML</i></div></center>
+    <br>
+    <br>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Tag-urile nu sunt altceva decat niste marcaje sau etichete pe care limbajul HTML le foloseste alaturi de texte pentru a ajuta browser-ul de internet sa afiseze corect continutul paginii web.</p>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Aceste tag-uri (etichete) pot fi de doua feluri:
+     <ul style="text-align:left;font-size: 19px;">
+      <li>taguri pereche (un tag de inceput si unul de incheiere)</li>
+      <li>taguri singulare (nu au un tag de incheiere)</li>
+    </ul>
+    <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp; Sa vedem tag-urile de baza pe care trebuie sa le contina un document HTML:
+      <ul style="text-align:left;font-size: 19px;">
+      <li>&lt;html&gt; - cu acest tag incepe orice document HTML. Prin folosirea acestui tag ii spunem browser-ului ca este vorba de un fisier HTML pentru a il putea afisa.
+      </li>
+      <li>&lt;head&gt; - intre aceste tag-uri sunt trecute, pe langa titlul paginii, diverse informatii folositoare pentru browser-ul de internet, informatii pe care le vom descoperi pe parcursul acestui curs.
+      </li>
+      <li>&lt;/head&gt; - acesta este tag-ul de incheiere al tag-ului &lt;/head&gt;
+      </li>
+      <li>&lt;title&gt; - cu ajutorul acestei perechi de tag-uri vei putea da un titlu documentului tau. Astfel, textul pe care il vei scrie intre aceste tag-uri va fi afisat in bara de titlu a documentului.
+      </li>
+      <li>&lt;/title&gt; - este tag-ul de incheiere al tag-ului &lt;title&gt;. Arata sfarsitul titlului documentului.
+      </li>
+      <li>&lt;body&gt; - odata cu acest tag incepe continutul paginii web. Tot ce vei scrie intre tag-urile &lt;body&gt;si &lt;/body&gt; va fi afisat, de catre browser, pe ecranul monitorului.
+      </li>
+      <li>&lt;/body&gt; - ii spui browser-ului ca ai terminat de scris continutul paginii. Tot ceea ce vei scrie dupa acest tag nu va mai fi afisat.
+      </li>
+      <li>&lt;/html&gt; - este tag-ul de incheiere al tag-ului &lt;html&gt;. Codul oricarui document se termina cu acest tag.
+      </li>
+      </ul></p>
+      <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Tag-urile (etichetele) pot fi scrise atat cu litere mari cat si cu litere mici.</p>
+      <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;<i style="text-decoration:underline wavy rgb(107, 57, 57) 1px;">Nu uita atunci cand scrii codul unei pagini web sa inchizi toate tag-urile pe care le-ai deschis.</i> Pentru a fi sigur ca nu uiti incearca sa te obisnuiesti sa scrii dupa fiecare tag si tag-ul de incheiere (la tag-urile pereche), scriind apoi continutul intre ele. O alta solutie pentru a nu uita sa inchizi vreun tag, este sa folosesti la scrierea codului, un editor HTML (atunci cand vrei sa folosesti un tag, editorul va scrie automat si tag-ul de incheiere).</p>
+      <p style="text-align:left;font-size: 19px;"> &nbsp; &nbsp;Pentru scrierea codului vom urma schema:</p>
+      <center>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="Prima lectie 1.png" alt="Format pagina web" style="width: 600px;height:450px;">
+          </div>
+          <div class="flip-card-back"> 
+             <pre>   
+
+
+             </pre>
+             <h1 style="text-align:center ;">Explicatia</h1> 
+             <p style="font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vom incepe cu tag-ul &lt;html&gt;. Pentru a nu uita de tag-ul de inchidere este bine sa-l pui si pe acesta tot la inceput. In continuare vin tag-urile &lt;head&gt; si &lt;/head&gt;. Urmeaza tag-urile &lt;body&gt; si &lt;/body&gt;. Ce vom scrie intre ele va fi afisat in browserul de internet.</p>
+          </div>
+        </div>
+      </div>
+    </center>
+    <pre>           </pre>
+    </div>
+
+
+</div>
+</body>

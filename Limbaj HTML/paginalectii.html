@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+.titlu{
+  font-family: "Sofia", sans-serif;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimbajHTML</title>
+</head>
+<body style="background-image:url('fundal principal.jpg');background-repeat: no-repeat;
+background-attachment:fixed;
+background-size: cover;">
+<style>
+@keyframes animatie_1 {
+  0% {background-color: #e799a3bf;}
+  50% {background-color: #99e8ddba;}
+  100% {background-color: #e799a3b0;}
+}
+@keyframes animatie_2 {
+  0% {background-color: #ffabb7;}
+  50% {background-color: #4dc5b5;}
+  100% {background-color: #ffabb7;}
+}
+.titlu {
+  width: 100px;
+  height: 100px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.titlu:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+}
+
+.buton_1 {
+  height: 45px;
+  width: 200px; 
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border:none;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg, #f7d8dd 25%, #afc5c0 95%);
+  font-family: "Sofia", sans-serif;
+  font-size: 20px; ;
+  transition: all 0.3s ease;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  
+}
+.buton_1:hover {
+  background-position: right center;
+  color: #fff;
+}
+.buton_1:hover:after{
+   height: 100%;
+}
+
+.buton_1:after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 115%;
+  background: #c04f4f;
+  background-image: linear-gradient(360deg, #fca3ad 15%, rgb(55, 195, 174) 80%);
+
+}
+ 
+.buton_1:active {
+  top: 2px;
+  
+}
+</style>
+<div >
+ <div  style="scroll-snap-align:start ;position: sticky;z-index:999; top:20px; background-color:#feb3b3;height: 80px; width=device-width;animation: animatie_1 7s infinite;"  >
+     <img style="height: 80px; width: 150px; float: left;" src="imagine MENIU 1.jpg" >
+   <center> 
+    <table style="height: 40px;" width=device-width >
+    <tr>
+    <td ><img style="height:95px" src="LOGO 2.png"></td>
+    <td><pre>  </pre></td>
+    <td><a href ="primapagina.html"><button class="buton_1">Pagina principala</button></a ></td>
+    <td><a href ="paginalectii.html"><button class="buton_1">Pagina lectii</button></a></td> 
+    <td><a href ="pagina_tag-uri.html"><button class="buton_1">Tag-uri si atribute</button></a ></a></td>
+    
+  </center>
+  <img style="height: 80px;float: right; width: 150px;px ;" src="imagine MENIU 1.jpg" >
+  </table>
+ </div>
+ <br>
+ <br>
+ <br>
+  <div style="float:left;width:max-content; margin:15px;padding: 10px; background-color: rgb(248, 224, 224);background-image:url('imagine MENIU.jpg');background-repeat: no-repeat;
+  background-attachment:scroll;
+  background-size: cover;">
+    <h2 style="font-style: oblique; ">Meniu</h2>
+    <ul>
+      <li style="font-size: 20px;"><a style="text-decoration:none;" href="primapagina.html"><em style="color:black; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Pagina principala</em></a></li>
+      <li style="font-size: 20px"><a style="text-decoration:none;" href="paginalectii.html"><em style="color:black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Lectii</em></a>
+          
+      </li>
+      <li style="font-size: 20px"><a style="text-decoration:none;" href="pagina_tag-uri.html"><em style="color:black;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Tag-uri si atribute</em></a></li>
+      
+  </ul>
+  </div>
+  <table>
+    <th><div style="margin:10px;padding:15px ; float: left; width:1130px;background-color:#fbadb757;">
+       <br> 
+       <center> <div style="text-align:center;font-size: 35px;width: 550px;height: 55px; border-radius: 50% ;border:  rgb(255, 255, 255) solid ;text-shadow: 2px 2px #b5fbe6ce;" class="titlu"><i style="color: rgb(0, 0, 0)">Sa invatam HTML!</i></div></center>
+       <br>
+       <br>
+       <p style="text-align:center;font-size: 19px;">&nbsp;&nbsp;&nbsp;&nbsp; Pe aceasta pagina vei găsi structurata, în lecții compacte , informația pentru bazele învățării HTML-ului :</p>
+       
+        <style>
+          .pictograma {
+            position: relative;
+            width: 250px;
+            z-index: 0;
+          }
+          
+          .image {
+            display: block;
+            width: 250px;
+            height: auto;
+          }
+          
+          .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: #59a0b7;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+            animation: animatie_2 4s infinite ;
+          }
+          
+          .pictograma:hover .overlay {
+            bottom: 0;
+            height: 100%;
+          }
+          
+          .text {
+            white-space: nowrap; 
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+          }
+          </style>
+          <center>
+          <table style="f">
+          <tr><td><div class="pictograma">
+            <img src="Prima Pictograma.png" alt="Prima lectie" class="image">
+            <a href="Prima_lectie.html"><div class="overlay">
+            <div class="text"><i>Structura unui document HTML</i></div>
+            </div></a>
+          </div></td>
+          <td><pre>     </pre></td>
+
+          <td><div class="pictograma">
+            <img src="A doua pictograma.png" alt="Prima lectie" class="image">
+            <a href="A_doua_lectie.html"><div class="overlay">
+            <div class="text"><i>Despre Atribute HTML</i></div>
+            </div></a>
+          </div></td>
+        
+        <td><pre>     </pre></td>
+          
+            <td><div class="pictograma">
+            <img src="A Treia Pictograma.png" alt="Prima lectie" class="image">
+            <a href="A_treia_lectie.html"><div class="overlay">
+            <div class="text"><i>Despre Culori HTML</i></div>
+            </div></a>
+          </div></td>
+          <td><pre>    </pre></td>
+            <td><div class="pictograma">
+            <img src="A Patra Pictograma.png" alt="Prima lectie" class="image">
+            <a href="A_patra_lectie.html"><div class="overlay">
+            <div class="text"><i>Formatarea textului in HTML</i></div>
+            </div></a>
+              </div></td>
+        </tr>
+        <tr><td><pre>  </pre></td></tr>
+          <tr>
+            <td><div class="pictograma">
+            <img src="A Cincea Pictograma.png" alt="Prima lectie" class="image">
+            <a href="A_cincea_lectie.html"><div class="overlay">
+            <div class="text"><i>Adaugare imagini in HTML</i></div>
+            </div></a>
+          </div></td>
+          <td><pre>    </pre></td>
+            <td><div class="pictograma">
+            <img src="A Sasea Pictograma.png" alt="Prima lectie" class="image">
+            <a href="A_sasea_lectie.html"><div class="overlay">
+            <div class="text"><i>Creare link in HTML</i></div>
+            </div></a>
+              </div></td>
+              <td><pre>     </pre></td>
+          
+            <td><div class="pictograma">
+            <img src="A Saptea Pictograma.png" alt="Prima lectie" class="image">
+            <a href="A_saptea_lectie.html"><div class="overlay">
+            <div class="text"><i>Creare liste in HTML</i></div>
+            </div></a>
+          </div></td>
+          <td><pre>     </pre></td>
+            <td><div class="pictograma">
+            <img src="A Opta Pictograma.png" alt="Prima lectie" class="image">
+            <a href="A_opta_lectie.html"><div class="overlay">
+            <div class="text"><i>Creare tabele in HTML</i></div>
+            </div></a>
+              </div></td>
+        </tr>
+        </tr>
+          </table>
+        </center>
+    
+       </div>
+      </body>
+    </html>
